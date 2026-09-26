@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Eye } from 'lucide-react';
 import TypingEffect from '@/components/TypingEffect';
 import ParticleBackground from '@/components/ParticleBackground';
+import AnimatedLogo from '@/components/AnimatedLogo';
 import { stats } from '@/data/content';
 import { useT } from '@/data/i18n';
 
@@ -23,25 +24,36 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl"
+          className="max-w-3xl mx-auto"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 text-sm font-medium text-primary-600 dark:text-primary-400 mb-6">
-            <Sparkles className="w-4 h-4" />
-            {t.hero.available[lang]}
+          <div className="flex flex-col items-center text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 text-sm font-medium text-primary-600 dark:text-primary-400 mb-6">
+              <Sparkles className="w-4 h-4" />
+              {t.hero.available[lang]}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.6 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              className="mb-8 flex"
+            >
+              <AnimatedLogo />
+            </motion.div>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-4 text-center">
             {t.hero.greeting[lang]}<br />
             <span className="gradient-text">
               <TypingEffect words={t.hero.typingWords[lang]} />
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-800 dark:text-gray-200 mb-8 max-w-2xl leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-800 dark:text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
             {t.hero.description[lang]}
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             <Link to="/contact" className="btn-primary">
               {t.hero.ctaPrimary[lang]}
               <ArrowRight className="w-4 h-4" />
@@ -60,11 +72,11 @@ export default function Hero() {
           >
             {stats.map((stat) => (
               <div key={stat.labelKey} className="text-center sm:text-left">
-                <div className="flex items-center gap-2 justify-center sm:justify-start">
+                <div className="flex items-center gap-2 justify-center">
                   <stat.icon className="w-4 h-4 text-primary-500" />
                   <span className="text-2xl sm:text-3xl font-bold gradient-text">{stat.value}</span>
                 </div>
-                <span className="stat-underline sm:mx-0" aria-hidden="true" />
+                <span className="stat-underline" aria-hidden="true" />
                 <p className="text-sm text-gray-700 dark:text-gray-200 mt-1.5">
                   {t.stats[stat.labelKey as keyof typeof t.stats][lang]}
                 </p>

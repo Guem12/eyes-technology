@@ -68,7 +68,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-8 border-t border-gray-200 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} EyesTechnology (Beidy Dia). {t.footer.rights[lang]}
+            © {new Date().getFullYear()} EyesTechnology. {t.footer.rights[lang]}
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <Link
@@ -86,9 +86,6 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <p className="mt-4 text-center text-xs text-gray-500 dark:text-gray-400">
-          {t.footer.builtWith[lang]}
-        </p>
       </div>
     </footer>
   );

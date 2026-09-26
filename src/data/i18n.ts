@@ -17,8 +17,8 @@ export const t = {
       en: ['Custom Showcase Websites', 'Web & Mobile Apps', 'E-commerce & Online Payment', 'Complete Digital Solutions'],
     },
     description: {
-      fr: "Je crée des sites vitrines, des applications web & mobiles et des solutions sur mesure qui font grandir votre activité. De l'idée à la mise en ligne, un interlocuteur unique et engagé.",
-      en: "I build showcase websites, web & mobile apps, and custom solutions that grow your business. From idea to launch, one committed point of contact.",
+      fr: "EyesTechnology conçoit des sites vitrines, des applications web & mobiles et des solutions sur mesure qui font grandir votre activité. De l'idée à la mise en ligne, une équipe engagée à vos côtés.",
+      en: "EyesTechnology builds showcase websites, web & mobile apps, and custom solutions that grow your business. From idea to launch, a committed team by your side.",
     },
     ctaPrimary: { fr: 'Travaillons ensemble', en: "Let's Work Together" },
     ctaSecondary: { fr: 'Voir les services', en: 'View Services' },
@@ -33,20 +33,42 @@ export const t = {
   // Services preview
   servicesPreview: {
     label: { fr: 'Services', en: 'Services' },
-    title: { fr: 'Comment je peux vous aider', en: 'How I Can Help You' },
+    title: { fr: 'Comment nous pouvons vous aider', en: 'How We Can Help You' },
     description: {
       fr: 'Du concept au déploiement, j\'offre des services de développement de bout en bout adaptés à vos besoins.',
       en: 'From concept to deployment, I offer end-to-end development services tailored to your needs.',
     },
     viewAll: { fr: 'Voir tous les services', en: 'View All Services' },
   },
-  // Skills
+  // Skills — conversation style Aken
   skills: {
-    label: { fr: 'Compétences', en: 'Skills' },
-    title: { fr: 'Technologies que j\'utilise', en: 'Technologies I Work With' },
+    label: { fr: 'Technologies', en: 'Technologies' },
+    title: { fr: 'La bonne techno pour ', en: 'The Right Tech for ' },
+    titleAccent: { fr: 'votre projet', en: 'Your Project' },
     description: {
-      fr: "Un aperçu de mes compétences techniques de base, affinées sur plus de 8 ans de création de produits.",
-      en: "A snapshot of my core technical skills, honed over 8+ years of building products.",
+      fr: "Pas de liste imposée : nous choisissons les outils après avoir compris votre besoin. Voici comment ça se passe.",
+      en: "No imposed list: we pick the tools after understanding your need. Here is how it works.",
+    },
+    conversations: [
+      {
+        client: { fr: '« Je veux vendre en ligne, mes clients paient avec Wave et Orange Money. »', en: '"I want to sell online, my customers pay with Wave and Orange Money."' },
+        reply: { fr: 'Boutique en ligne rapide, paiement mobile money intégré et reçu automatique — vos ventes tournent même pendant votre sommeil.', en: 'A fast online store with built-in mobile money payments and automatic receipts — your sales run even while you sleep.' },
+        chips: { fr: ['E-commerce', 'Mobile Money', 'PWA'], en: ['E-commerce', 'Mobile Money', 'PWA'] },
+      },
+      {
+        client: { fr: '« La connexion est instable chez nous, l\'application doit continuer à marcher. »', en: '"Our connection is unreliable, the app must keep working."' },
+        reply: { fr: 'Conception offline-first : les données s\'enregistrent localement puis se synchronisent dès que le réseau revient.', en: 'Offline-first design: data is saved locally, then syncs as soon as the network returns.' },
+        chips: { fr: ['Offline-first', 'Synchronisation', 'Performance 3G'], en: ['Offline-first', 'Sync', '3G Performance'] },
+      },
+    ],
+    adaptTitle: { fr: 'La stack ? Elle s\'adapte à vous.', en: 'The Stack? It Adapts to You.' },
+    adaptDesc: {
+      fr: "Sites vitrines, e-commerce, applications ou gestion de données : nos solutions s'appuient sur des technologies éprouvées, choisies pour durer.",
+      en: "Showcase sites, e-commerce, apps or data management: our solutions rely on proven technologies, chosen to last.",
+    },
+    adaptChips: {
+      fr: ['Sites & boutiques web', 'Applications mobiles', 'Outils de gestion', 'Bases de données & BI', 'Hébergement & DevOps', 'Sécurité'],
+      en: ['Websites & Online Stores', 'Mobile Apps', 'Management Tools', 'Databases & BI', 'Hosting & DevOps', 'Security'],
     },
   },
   // Testimonials
@@ -54,16 +76,16 @@ export const t = {
     label: { fr: 'Témoignages', en: 'Testimonials' },
     title: { fr: 'Ce que disent les clients', en: 'What Clients Say' },
     description: {
-      fr: "Ne me croyez pas sur parole — voici ce que les personnes avec qui j'ai travaillé ont à dire.",
-      en: "Don't just take my word for it — here's what people I've worked with have to say.",
+      fr: "Ne nous croyez pas sur parole — voici ce que les personnes avec qui nous avons travaillé ont à dire.",
+      en: "Don't just take our word for it — here's what people we've worked with have to say.",
     },
   },
   // CTA
   cta: {
     title: { fr: 'Prêt à construire quelque chose de génial ?', en: 'Ready to Build Something Great?' },
     description: {
-      fr: "Que vous ayez un projet entièrement défini ou juste une idée, j'adorerais vous aider à lui donner vie.",
-      en: "Whether you have a fully scoped project or just an idea, I'd love to help you bring it to life.",
+      fr: "Que vous ayez un projet entièrement défini ou juste une idée, nous serions ravis de vous aider à lui donner vie.",
+      en: "Whether you have a fully scoped project or just an idea, we'd love to help you bring it to life.",
     },
     button: { fr: 'Démarrer un projet', en: 'Start a Project' },
   },
@@ -73,8 +95,8 @@ export const t = {
     title: { fr: 'Services de développement ', en: 'Development Services ' },
     titleAccent: { fr: 'adaptés à vous', en: 'Tailored to You' },
     description: {
-      fr: "Que vous ayez besoin d'une rapide landing page ou d'une application web complète, j'ai un service qui correspond. Chaque projet est conçu avec performance, accessibilité et évolutivité à l'esprit.",
-      en: 'Whether you need a quick landing page or a full-scale web application, I have a service that fits. Every project is built with performance, accessibility, and scalability in mind.',
+      fr: "Que vous ayez besoin d'une rapide landing page ou d'une application web complète, nous avons un service qui correspond. Chaque projet est conçu avec performance, accessibilité et évolutivité à l'esprit.",
+      en: 'Whether you need a quick landing page or a full-scale web application, we have a service that fits. Every project is built with performance, accessibility, and scalability in mind.',
     },
     getQuote: { fr: 'Demander un devis', en: 'Get a quote' },
     processLabel: { fr: 'Processus', en: 'Process' },
@@ -85,10 +107,67 @@ export const t = {
     },
     processSteps: [
       { title: { fr: 'Découverte', en: 'Discovery' }, desc: { fr: 'Nous discutons de votre projet, vos objectifs et votre calendrier pour définir clairement la portée.', en: 'We discuss your project, goals, and timeline to define the scope clearly.' } },
-      { title: { fr: 'Design', en: 'Design' }, desc: { fr: 'Je crée des maquettes et un système de design adapté à votre marque et votre audience.', en: 'I create wireframes and a design system tailored to your brand and audience.' } },
+      { title: { fr: 'Design', en: 'Design' }, desc: { fr: 'Nous créons des maquettes et un système de design adapté à votre marque et votre audience.', en: 'We create wireframes and a design system tailored to your brand and audience.' } },
       { title: { fr: 'Développement', en: 'Develop' }, desc: { fr: 'Du code propre et testé avec des mises à jour régulières et des démos en cours de route.', en: 'Clean, tested code with regular updates and demo sessions along the way.' } },
       { title: { fr: 'Livraison', en: 'Deliver' }, desc: { fr: 'Déploiement, documentation et support post-lancement pour que tout fonctionne.', en: 'Deployment, documentation, and post-launch support to ensure everything runs.' } },
     ],
+    // Façons de travailler ensemble
+    engagementsLabel: { fr: 'Formats', en: 'Formats' },
+    engagementsTitle: { fr: 'Trois façons de ', en: 'Three Ways to ' },
+    engagementsTitleAccent: { fr: 'travailler ensemble', en: 'Work Together' },
+    engagementsDesc: {
+      fr: 'Du projet clé en main à la mission ponctuelle, choisissez le format qui correspond à votre besoin et votre budget.',
+      en: 'From turnkey project to one-off mission, pick the format that fits your need and budget.',
+    },
+    engagements: [
+      {
+        badge: { fr: 'Le plus demandé', en: 'Most popular' },
+        title: { fr: 'Projet clé en main', en: 'Turnkey Project' },
+        desc: { fr: 'Du cadrage à la mise en ligne, nous gérons tout : design, développement, hébergement. Forfait fixe connu à l\'avance, sans surprise.', en: 'From scoping to launch, we handle everything: design, development, hosting. Fixed price agreed upfront, no surprises.' },
+        points: { fr: ['Devis forfaitaire en FCFA', 'Design sur mesure inclus', 'Garantie 30 jours après livraison'], en: ['Fixed quote in FCFA', 'Custom design included', '30-day warranty after delivery'] },
+        cta: { fr: 'Demander un devis', en: 'Request a Quote' },
+      },
+      {
+        badge: null,
+        title: { fr: 'Amélioration continue', en: 'Ongoing Improvement' },
+        desc: { fr: 'Votre site existe déjà ? Nous nous occupons des évolutions, mises à jour et corrections chaque mois, pour qu\'il reste rapide et sécurisé.', en: 'Your site already exists? We handle enhancements, updates, and fixes every month so it stays fast and secure.' },
+        points: { fr: ['Forfait mensuel léger', 'Évolutions prioritaires', 'Rapport d\'activité chaque mois'], en: ['Light monthly plan', 'Priority enhancements', 'Monthly activity report'] },
+        cta: { fr: 'Discuter sur WhatsApp', en: 'Chat on WhatsApp' },
+      },
+      {
+        badge: null,
+        title: { fr: 'Mission ponctuelle', en: 'One-off Mission' },
+        desc: { fr: 'Un besoin précis et délimité : intégration API, refonte d\'une page, correction de bugs, audit technique.', en: 'A specific, scoped need: API integration, page redesign, bug fixing, technical audit.' },
+        points: { fr: ['Cadrage rapide', 'Estimation sous 24h', 'Sans engagement'], en: ['Quick scoping', 'Estimate within 24h', 'No commitment'] },
+        cta: { fr: 'Décrire mon besoin', en: 'Describe My Need' },
+      },
+    ],
+    // Secteurs
+    sectorsLabel: { fr: 'Secteurs', en: 'Industries' },
+    sectorsTitle: { fr: 'Des solutions pour ', en: 'Solutions for ' },
+    sectorsTitleAccent: { fr: 'chaque activité', en: 'Every Business' },
+    sectorsDesc: {
+      fr: 'Nous connaissons les réalités du terrain à Bamako et en Afrique de l\'Ouest : chaque solution est pensée pour votre métier.',
+      en: "We know the ground realities of Bamako and West Africa: every solution is designed for your trade.",
+    },
+    sectors: [
+      { title: { fr: 'Commerce & boutiques', en: 'Retail & Shops' }, desc: { fr: 'Boutiques en ligne avec paiement Wave & Orange Money, gestion de stock intégrée.', en: 'Online stores with Wave & Orange Money payments, built-in inventory management.' } },
+      { title: { fr: 'Restaurants & hôtels', en: 'Restaurants & Hotels' }, desc: { fr: 'Menus en ligne, réservations et commandes reçues directement sur WhatsApp.', en: 'Online menus, bookings, and orders received directly on WhatsApp.' } },
+      { title: { fr: 'Immobilier', en: 'Real Estate' }, desc: { fr: 'Catalogues de biens avec photos, filtres et demandes de visite qualifiées.', en: 'Property catalogs with photos, filters, and qualified visit requests.' } },
+      { title: { fr: 'Écoles & formations', en: 'Schools & Training' }, desc: { fr: 'Présentation des formations, inscriptions en ligne et communication aux parents.', en: 'Program showcases, online enrollment, and parent communication.' } },
+      { title: { fr: 'ONG & associations', en: 'NGOs & Non-profits' }, desc: { fr: 'Sites institutionnels, présentation de projets et rapports d\'impact en ligne.', en: 'Institutional sites, project showcases, and online impact reports.' } },
+      { title: { fr: 'Artisans & indépendants', en: 'Artisans & Freelancers' }, desc: { fr: 'Portfolio professionnel, prise de rendez-vous et devis rapides pour vos clients.', en: 'Professional portfolio, appointment booking, and quick quotes for your clients.' } },
+    ],
+    // Guide gratuit (lead magnet)
+    guideBadge: { fr: 'Guide gratuit', en: 'Free Guide' },
+    guideTitle: { fr: '5 erreurs à éviter avant de lancer votre site web', en: '5 Mistakes to Avoid Before Launching Your Website' },
+    guideDesc: {
+      fr: 'La checklist que nous donnons à nos clients : les pièges qui coûtent cher (hébergement, noms de domaine, faux développeurs) et comment les éviter. Envoyé gratuitement sur WhatsApp.',
+      en: 'The checklist we give our clients: costly pitfalls (hosting, domain names, fake developers) and how to avoid them. Sent free on WhatsApp.',
+    },
+    guidePoints: { fr: ['PDF gratuit, sans inscription', 'Conseils adaptés au marché malien', 'Reçu en moins de 5 minutes'], en: ['Free PDF, no signup', 'Tips tailored to the Malian market', 'Received in under 5 minutes'] },
+    guideCta: { fr: 'Recevoir le guide sur WhatsApp', en: 'Get the Guide on WhatsApp' },
+    guideWaMessage: { fr: 'Bonjour EyesTechnology ! Je voudrais recevoir le guide gratuit « 5 erreurs à éviter avant de lancer votre site web ». Merci !', en: "Hello EyesTechnology! I'd like to receive the free guide '5 Mistakes to Avoid Before Launching Your Website'. Thank you!" },
   },
   // Services data
   servicesData: [
@@ -96,36 +175,43 @@ export const t = {
       title: { fr: 'Développement Web', en: 'Web Development' },
       description: { fr: 'Applications web sur mesure construites avec des frameworks modernes. Rapides, accessibles et évolutives dès le premier jour.', en: 'Custom web applications built with modern frameworks. Fast, accessible, and scalable from day one.' },
       features: { fr: ['React / Next.js', 'Rendu côté serveur', 'Optimisation des performances', 'Optimisé SEO'], en: ['React / Next.js', 'Server-side rendering', 'Performance optimization', 'SEO-ready'] },
+      tags: { fr: ['Site vitrine', 'Landing page', 'SEO Google', 'Ultra-rapide'], en: ['Showcase site', 'Landing page', 'Google SEO', 'Blazing fast'] },
     },
     {
       title: { fr: 'Applications Mobiles', en: 'Mobile Apps' },
       description: { fr: 'Applications mobiles multiplateformes qui se sentent natives sur iOS et Android avec un seul code base.', en: 'Cross-platform mobile applications that feel native on iOS and Android with a single codebase.' },
       features: { fr: ['React Native', 'Support hors ligne', 'Notifications push', 'Déploiement App Store'], en: ['React Native', 'Offline support', 'Push notifications', 'App Store deployment'] },
+      tags: { fr: ['iOS & Android', 'Notifications push', 'Mode hors ligne'], en: ['iOS & Android', 'Push notifications', 'Offline mode'] },
     },
     {
       title: { fr: 'Intégration API', en: 'API Integration' },
       description: { fr: 'Connectez votre produit à n\'importe quel service tiers — paiements, auth, CRM ou API internes personnalisées.', en: 'Connect your product to any third-party service — payments, auth, CRMs, or custom internal APIs.' },
       features: { fr: ['REST & GraphQL', 'Gestion des webhooks', 'Stratégies de rate-limit', 'Flux OAuth'], en: ['REST & GraphQL', 'Webhook handling', 'Rate-limit strategies', 'OAuth flows'] },
+      tags: { fr: ['Paiement Wave', 'Orange Money', 'Webhooks', 'Sécurisé'], en: ['Wave payments', 'Orange Money', 'Webhooks', 'Secure'] },
     },
     {
       title: { fr: 'Gestion & Valorisation de Données', en: 'Data Management & Analytics' },
       description: { fr: "Centralisez et pilotez votre activité : stocks, ventes, clients et facturation réunis dans des tableaux de bord clairs pour décider vite et juste.", en: 'Centralize and leverage your business: inventory, sales, customers, and invoicing brought together in clear dashboards to decide faster and better.', },
       features: { fr: ['Suivi des stocks en temps réel', 'Tableau de bord des ventes', 'Base clients & historique', 'Facturation automatisée', 'Sauvegardes automatiques'], en: ['Real-time inventory tracking', 'Sales dashboard', 'Customer database & history', 'Automated invoicing', 'Automated backups'] },
+      tags: { fr: ['Stocks', 'Ventes', 'Facturation', 'Tableaux de bord'], en: ['Inventory', 'Sales', 'Invoicing', 'Dashboards'] },
     },
     {
       title: { fr: 'Design UI/UX', en: 'UI/UX Design' },
       description: { fr: 'Des systèmes de design et des interfaces qui sont beaux, intuitifs et basés sur de vraies recherches utilisateur.', en: 'Design systems and interfaces that are beautiful, intuitive, and backed by real user research.' },
       features: { fr: ['Systèmes de design', 'Prototypage', 'Audits d\'accessibilité', 'Mode sombre'], en: ['Design systems', 'Prototyping', 'Accessibility audits', 'Dark mode'] },
+      tags: { fr: ['Maquettes', 'Identité visuelle', 'Responsive'], en: ['Wireframes', 'Brand identity', 'Responsive'] },
     },
     {
       title: { fr: 'Conseil', en: 'Consulting' },
       description: { fr: 'Stratégie technique, revues d\'architecture et mentorat d\'équipe pour vous aider à livrer avec confiance.', en: 'Technical strategy, architecture reviews, and team mentoring to help you ship with confidence.' },
       features: { fr: ['Revue d\'architecture', 'Audits de code', 'Feuilles de route tech', 'Mentorat d\'équipe'], en: ['Architecture review', 'Code audits', 'Tech roadmaps', 'Team mentoring'] },
+      tags: { fr: ['Audit gratuit', 'Feuille de route', 'Formation'], en: ['Free audit', 'Roadmap', 'Training'] },
     },
     {
       title: { fr: 'DevOps & Cloud', en: 'DevOps & Cloud' },
       description: { fr: 'Pipelines CI/CD, conteneurisation et infrastructure cloud qui passe à l\'échelle sans surprises.', en: 'CI/CD pipelines, containerization, and cloud infrastructure that scales without surprises.' },
       features: { fr: ['Docker & Kubernetes', 'Configuration AWS / GCP', 'Pipelines CI/CD', 'Monitoring'], en: ['Docker & Kubernetes', 'AWS / GCP setup', 'CI/CD pipelines', 'Monitoring'] },
+      tags: { fr: ['Hébergement', 'Sauvegardes', 'Monitoring'], en: ['Hosting', 'Backups', 'Monitoring'] },
     },
   ],
   // Pricing
@@ -180,8 +266,8 @@ export const t = {
     },
     comparisonFeature: { fr: 'Prestation / Option', en: 'Feature / Option' },
     customQuoteText: {
-      fr: 'Un besoin spécifique ou un cahier des charges particulier ? Je réalise une étude gratuite de votre projet et vous délivre un devis en FCFA sous 24h.',
-      en: 'Have specific requirements or a custom spec sheet? I provide a free project assessment and deliver a quote in FCFA within 24h.',
+      fr: 'Un besoin spécifique ou un cahier des charges particulier ? Nous réalisons une étude gratuite de votre projet et vous délivrons un devis en FCFA sous 24h.',
+      en: 'Have specific requirements or a custom spec sheet? We provide a free project assessment and deliver a quote in FCFA within 24h.',
     },
     customQuote: { fr: 'Obtenir un devis personnalisé gratuit', en: 'Get a Free Custom Quote' },
     comparisonRows: [
@@ -204,8 +290,8 @@ export const t = {
       name: 'Sarah Chen',
       role: { fr: 'PDG, Lumen Startup', en: 'CEO, Lumen Startup' },
       quote: {
-        fr: 'Beidy a livré notre MVP en trois semaines — c\'était plus rapide, plus propre et plus soigné que ce que nous imaginions. Nos investisseurs ont été bluffés.',
-        en: 'Beidy delivered our MVP in three weeks — it was faster, cleaner, and more polished than we imagined. Our investors were blown away.',
+        fr: 'EyesTechnology a livré notre MVP en trois semaines — c\'était plus rapide, plus propre et plus soigné que ce que nous imaginions. Nos investisseurs ont été bluffés.',
+        en: 'EyesTechnology delivered our MVP in three weeks — it was faster, cleaner, and more polished than we imagined. Our investors were blown away.',
       },
       avatar: 'SC',
     },
@@ -222,8 +308,8 @@ export const t = {
       name: 'Awa Ndiaye',
       role: { fr: 'Fondatrice, Artisan App', en: 'Founder, Artisan App' },
       quote: {
-        fr: 'L\'application mobile que Beidy a construite pour nous a une note de 4,8 étoiles sur l\'App Store. L\'attention aux détails dans l\'UI était remarquable.',
-        en: 'The mobile app Beidy built for us has a 4.8 star rating on the App Store. The attention to detail in the UI was remarkable.',
+        fr: 'L\'application mobile qu\'EyesTechnology a construite pour nous a une note de 4,8 étoiles sur l\'App Store. L\'attention aux détails dans l\'UI était remarquable.',
+        en: 'The mobile app EyesTechnology built for us has a 4.8 star rating on the App Store. The attention to detail in the UI was remarkable.',
       },
       avatar: 'AN',
     },
@@ -234,8 +320,8 @@ export const t = {
     title: { fr: 'Construisons ', en: "Let's Build " },
     titleAccent: { fr: 'ensemble', en: 'Together' },
     description: {
-      fr: "Un projet en tête ou juste envie de dire bonjour ? J'adorerais avoir de vos nouvelles. Remplissez le formulaire ci-dessous et je vous répondrai dans les 24 heures.",
-      en: "Have a project in mind or just want to say hi? I'd love to hear from you. Fill out the form below and I'll get back to you within 24 hours.",
+      fr: "Un projet en tête ou juste envie de dire bonjour ? Nous serions ravis d'avoir de vos nouvelles. Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures.",
+      en: "Have a project in mind or just want to say hi? We'd love to hear from you. Fill out the form below and we'll get back to you within 24 hours.",
     },
     getInTouch: { fr: 'Entrer en contact', en: 'Get in Touch' },
     email: { fr: 'E-mail', en: 'Email' },
@@ -264,21 +350,20 @@ export const t = {
     sent: { fr: 'Message envoyé !', en: 'Message Sent!' },
     failed: { fr: 'Échec — Réessayer', en: 'Failed — Try Again' },
     sendMessage: { fr: 'Envoyer le message', en: 'Send Message' },
-    successMsg: { fr: 'Merci de m\'avoir contacté ! Je vous répondrai dans les 24 heures.', en: "Thanks for reaching out! I'll get back to you within 24 hours." },
+    successMsg: { fr: 'Merci de nous avoir contactés ! Nous vous répondrons dans les 24 heures.', en: "Thanks for reaching out! We'll get back to you within 24 hours." },
     errorMsg: { fr: 'Une erreur s\'est produite. Veuillez réessayer ou m\'envoyer un e-mail directement.', en: 'Something went wrong. Please try again or email me directly.' },
   },
   // Footer
   footer: {
     description: {
-      fr: 'Développeur web & mobile freelance à Bamako : sites vitrines, e-commerce, applications et solutions sur mesure.',
-      en: 'Freelance web & mobile developer in Bamako: showcase sites, e-commerce, apps and custom solutions.',
+      fr: 'Solutions digitales à Bamako : sites vitrines, e-commerce, applications et accompagnement sur mesure.',
+      en: 'Digital solutions in Bamako: showcase sites, e-commerce, apps and custom support.',
     },
     navigation: { fr: 'Navigation', en: 'Navigation' },
     connect: { fr: 'Connecter', en: 'Connect' },
     rights: { fr: 'Tous droits réservés.', en: 'All rights reserved.' },
     legalNotice: { fr: 'Mentions légales', en: 'Legal Notice' },
     privacyPolicy: { fr: 'Politique de confidentialité', en: 'Privacy Policy' },
-    builtWith: { fr: 'Construit avec React, Framer Motion & Tailwind CSS.', en: 'Built with React, Framer Motion & Tailwind CSS.' },
   },
   // Legal pages
   legal: {
@@ -291,13 +376,13 @@ export const t = {
           body: {
             fr: [
               'Le site est édité par EyesTechnology, entreprise individuelle immatriculée à Bamako, Mali.',
-              'Représentant légal : Beidy Dia.',
+              'Directeur de publication : EyesTechnology.',
               'Contact : beidydia61@gmail.com — WhatsApp : +223 93 73 99 35.',
               'Adresse : Bamako, Mali.',
             ],
             en: [
               'This website is published by EyesTechnology, a sole proprietorship registered in Bamako, Mali.',
-              'Legal representative: Beidy Dia.',
+              'Publishing director: EyesTechnology.',
               'Contact: beidydia61@gmail.com — WhatsApp: +223 93 73 99 35.',
               'Address: Bamako, Mali.',
             ],
@@ -413,7 +498,7 @@ export const t = {
   },
   // Page metadata (SEO)
   meta: {
-    home: { title: 'EyesTechnology — Développement web & mobile à Bamako', desc: 'Développeur freelance : sites vitrines, e-commerce et applications sur mesure à Bamako, Mali. Devis gratuit en FCFA sous 24h.' },
+    home: { title: 'EyesTechnology — Solutions digitales & développement web à Bamako', desc: 'Sites vitrines, e-commerce et applications sur mesure à Bamako, Mali. Devis gratuit en FCFA sous 24h.' },
     services: { title: 'Services — EyesTechnology', desc: "Développement web, applications mobiles, e-commerce, design UI/UX et intégrations paiement pour votre entreprise." },
     pricing: { title: 'Tarifs & Devis — EyesTechnology', desc: 'Tarifs transparents en FCFA : site vitrine dès 150 000 FCFA, simulateur de devis instantané, paiement Wave & Orange Money.' },
     contact: { title: 'Contact — EyesTechnology', desc: 'Parlons de votre projet : devis gratuit sous 24h à Bamako, Mali. WhatsApp, e-mail ou formulaire.' },

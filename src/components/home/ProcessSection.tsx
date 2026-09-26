@@ -11,8 +11,8 @@ export default function ProcessSection() {
       icon: FileText,
       title: { fr: 'Cadrage & Devis Gratuit', en: 'Scope & Free Quote' },
       desc: {
-        fr: 'J\'analyse vos besoins et votre activité pour établir un cahier des charges clair et une estimation forfaitaire en FCFA sans surprise.',
-        en: 'I analyze your requirements and business goals to establish a clear scope and transparent FCFA quote.',
+        fr: 'Nous analysons vos besoins et votre activité pour établir un cahier des charges clair et une estimation forfaitaire en FCFA sans surprise.',
+        en: 'We analyze your requirements and business goals to establish a clear scope and transparent FCFA quote.',
       },
     },
     {
@@ -40,10 +40,10 @@ export default function ProcessSection() {
       <div className="container-max">
         <Reveal className="text-center max-w-2xl mx-auto mb-14">
           <span className="section-label">
-            {lang === 'fr' ? 'Ma Méthode' : 'My Process'}
+            {lang === 'fr' ? 'Notre Méthode' : 'Our Process'}
           </span>
           <h2 className="text-3xl sm:text-5xl font-bold mt-2 mb-4">
-            {lang === 'fr' ? 'Comment je travaille ' : 'How I Work '}
+            {lang === 'fr' ? 'Comment nous travaillons ' : 'How We Work '}
             <span className="gradient-text">{lang === 'fr' ? 'ensemble' : 'Together'}</span>
           </h2>
           <p className="text-gray-800 dark:text-gray-200">
@@ -92,8 +92,8 @@ export default function ProcessSection() {
               </h4>
               <p className="text-xs text-gray-800 dark:text-gray-200">
                 {lang === 'fr'
-                  ? 'Après la livraison, je reste à votre disposition 30 jours pour affiner et maintenir votre projet sans aucun frais supplémentaire.'
-                  : 'After delivery, I remain at your service for 30 days to refine and maintain your project at no extra cost.'}
+                  ? 'Après la livraison, nous restons à votre disposition 30 jours pour affiner et maintenir votre projet sans aucun frais supplémentaire.'
+                  : 'After delivery, we remain at your service for 30 days to refine and maintain your project at no extra cost.'}
               </p>
             </div>
           </div>

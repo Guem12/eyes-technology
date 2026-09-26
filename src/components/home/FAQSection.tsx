@@ -26,8 +26,8 @@ const FAQS: FAQItem[] = [
       en: 'Do you accept Wave and Orange Money payments?',
     },
     a: {
-      fr: 'Absolument. J\'accepte les paiements Mobile Money (Wave, Orange Money, Moov Money) ainsi que les virements bancaires. De plus, je peux intégrer directement ces moyens de paiement sur vos propres sites et applications !',
-      en: 'Absolutely. I accept Mobile Money payments (Wave, Orange Money, Moov Money) as well as bank transfers. Furthermore, I can integrate these payment methods directly onto your own websites and apps!',
+      fr: 'Absolument. Nous acceptons les paiements Mobile Money (Wave, Orange Money, Moov Money) ainsi que les virements bancaires. De plus, nous pouvons intégrer directement ces moyens de paiement sur vos propres sites et applications !',
+      en: 'Absolutely. We accept Mobile Money payments (Wave, Orange Money, Moov Money) as well as bank transfers. Furthermore, we can integrate these payment methods directly onto your own websites and apps!',
     },
   },
   {
@@ -46,8 +46,8 @@ const FAQS: FAQItem[] = [
       en: 'Do I have to pay the full amount upfront?',
     },
     a: {
-      fr: 'Non. Je fonctionne avec un acompte au lancement (généralement 30% à 50%), et le solde est versé à la livraison après votre entière satisfaction.',
-      en: 'No. I work with a deposit at launch (usually 30% to 50%), and the final balance is paid upon delivery after your full satisfaction.',
+      fr: 'Non. Nous fonctionnons avec un acompte au lancement (généralement 30% à 50%), et le solde est versé à la livraison après votre entière satisfaction.',
+      en: 'No. We work with a deposit at launch (usually 30% to 50%), and the final balance is paid upon delivery after your full satisfaction.',
     },
   },
   {
@@ -56,8 +56,8 @@ const FAQS: FAQItem[] = [
       en: 'What is included in the 30-day post-launch warranty?',
     },
     a: {
-      fr: 'Pendant 30 jours après le lancement, je corrige gratuitement tout bug éventuel, effectue les ajustements mineurs et vous accompagne pour la prise en main de vos outils.',
-      en: 'For 30 days after launch, I fix any potential bugs free of charge, handle minor adjustments, and guide you through mastering your tools.',
+      fr: 'Pendant 30 jours après le lancement, nous corrigeons gratuitement tout bug éventuel, effectuons les ajustements mineurs et vous accompagnons pour la prise en main de vos outils.',
+      en: 'For 30 days after launch, we fix any potential bugs free of charge, handle minor adjustments, and guide you through mastering your tools.',
     },
   },
 ];
@@ -79,7 +79,7 @@ export default function FAQSection() {
             {lang === 'fr' ? 'Foire Aux Questions' : 'Frequently Asked Questions'}
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold mt-2 mb-4">
-            {lang === 'fr' ? 'Des questions ? J\'ai les ' : 'Got Questions? I Have '}
+            {lang === 'fr' ? 'Des questions ? Nous avons les ' : 'Got Questions? We Have '}
             <span className="gradient-text">{lang === 'fr' ? 'réponses' : 'Answers'}</span>
           </h2>
           <p className="text-gray-800 dark:text-gray-200">

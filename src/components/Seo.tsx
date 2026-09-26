@@ -37,16 +37,12 @@ const LOCAL_BUSINESS_JSONLD = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   '@id': `${SITE_URL}/#business`,
-  name: 'EyesTechnology',
-  description:
-    'Développeur web et mobile freelance à Bamako : sites vitrines, e-commerce, applications sur mesure.',
+  name: 'EyesTechnology',    description:
+      'Solutions digitales à Bamako : sites vitrines, e-commerce, applications sur mesure.',
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
-  image: `${SITE_URL}/logo.png`,
-  telephone: '+22393739935',
-  email: 'beidydia61@gmail.com',
-  founder: { '@type': 'Person', name: 'Beidy Dia' },
-  employee: { '@type': 'Person', name: 'Beidy Dia' },
+  image: `${SITE_URL}/logo.png`,    telephone: '+22393739935',
+    email: 'beidydia61@gmail.com',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Bamako',
