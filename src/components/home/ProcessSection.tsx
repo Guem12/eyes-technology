@@ -42,7 +42,7 @@ export default function ProcessSection() {
           <span className="section-label">
             {lang === 'fr' ? 'Notre Méthode' : 'Our Process'}
           </span>
-          <h2 className="text-3xl sm:text-5xl font-bold mt-2 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold mt-2 mb-4">
             {lang === 'fr' ? 'Comment nous travaillons ' : 'How We Work '}
             <span className="gradient-text">{lang === 'fr' ? 'ensemble' : 'Together'}</span>
           </h2>

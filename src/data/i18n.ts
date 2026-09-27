@@ -35,8 +35,8 @@ export const t = {
     label: { fr: 'Services', en: 'Services' },
     title: { fr: 'Comment nous pouvons vous aider', en: 'How We Can Help You' },
     description: {
-      fr: 'Du concept au déploiement, j\'offre des services de développement de bout en bout adaptés à vos besoins.',
-      en: 'From concept to deployment, I offer end-to-end development services tailored to your needs.',
+      fr: 'Du concept au déploiement, nous offrons des services de développement de bout en bout adaptés à vos besoins.',
+      en: 'From concept to deployment, we offer end-to-end development services tailored to your needs.',
     },
     viewAll: { fr: 'Voir tous les services', en: 'View All Services' },
   },
@@ -158,16 +158,6 @@ export const t = {
       { title: { fr: 'ONG & associations', en: 'NGOs & Non-profits' }, desc: { fr: 'Sites institutionnels, présentation de projets et rapports d\'impact en ligne.', en: 'Institutional sites, project showcases, and online impact reports.' } },
       { title: { fr: 'Artisans & indépendants', en: 'Artisans & Freelancers' }, desc: { fr: 'Portfolio professionnel, prise de rendez-vous et devis rapides pour vos clients.', en: 'Professional portfolio, appointment booking, and quick quotes for your clients.' } },
     ],
-    // Guide gratuit (lead magnet)
-    guideBadge: { fr: 'Guide gratuit', en: 'Free Guide' },
-    guideTitle: { fr: '5 erreurs à éviter avant de lancer votre site web', en: '5 Mistakes to Avoid Before Launching Your Website' },
-    guideDesc: {
-      fr: 'La checklist que nous donnons à nos clients : les pièges qui coûtent cher (hébergement, noms de domaine, faux développeurs) et comment les éviter. Envoyé gratuitement sur WhatsApp.',
-      en: 'The checklist we give our clients: costly pitfalls (hosting, domain names, fake developers) and how to avoid them. Sent free on WhatsApp.',
-    },
-    guidePoints: { fr: ['PDF gratuit, sans inscription', 'Conseils adaptés au marché malien', 'Reçu en moins de 5 minutes'], en: ['Free PDF, no signup', 'Tips tailored to the Malian market', 'Received in under 5 minutes'] },
-    guideCta: { fr: 'Recevoir le guide sur WhatsApp', en: 'Get the Guide on WhatsApp' },
-    guideWaMessage: { fr: 'Bonjour EyesTechnology ! Je voudrais recevoir le guide gratuit « 5 erreurs à éviter avant de lancer votre site web ». Merci !', en: "Hello EyesTechnology! I'd like to receive the free guide '5 Mistakes to Avoid Before Launching Your Website'. Thank you!" },
   },
   // Services data
   servicesData: [
@@ -330,7 +320,7 @@ export const t = {
     whatsappValue: '+223 93 73 99 35',
     location: { fr: 'Localisation', en: 'Location' },
     locationValue: { fr: 'Bamako, Mali', en: 'Bamako, Mali' },
-    followMe: { fr: 'Suivez-moi', en: 'Follow me' },
+    followMe: { fr: 'Suivez-nous', en: 'Follow us' },
     // Form
     name: { fr: 'Nom', en: 'Name' },
     namePlaceholder: { fr: 'Jean Dupont', en: 'John Doe' },
@@ -482,7 +472,7 @@ export const t = {
           heading: { fr: 'Vos droits', en: 'Your Rights' },
           body: {
             fr: [
-              "Vous disposez d'un droit d'accès, de rectification et de suppression des données que vous m'avez transmises.",
+              "Vous disposez d'un droit d'accès, de rectification et de suppression des données que vous nous avez transmises.",
               'Pour exercer ces droits : beidydia61@gmail.com ou WhatsApp +223 93 73 99 35.',
               "Les échanges WhatsApp restent conservés sur votre appareil et le nôtre, conformément au fonctionnement de l'application.",
             ],

@@ -15,7 +15,7 @@ export default function ServicesPreview() {
           <span className="section-label">
             {t.servicesPreview.label[lang]}
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold mt-2 mb-4">{t.servicesPreview.title[lang]}</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mt-2 mb-4">{t.servicesPreview.title[lang]}</h2>
           <p className="text-gray-800 dark:text-gray-200">
             {t.servicesPreview.description[lang]}
           </p>
@@ -31,7 +31,7 @@ export default function ServicesPreview() {
                   transition={{ type: 'spring', stiffness: 300 }}
                   className="glass-card p-6 h-full glow-border"
                 >
-                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-primary-600 to-accent-500 text-white mb-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary-600 bg-gradient-to-br from-primary-600 to-accent-500 text-white mb-4">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{service.title[lang]}</h3>

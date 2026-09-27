@@ -36,7 +36,7 @@
 
 @layer components {
   .section-padding {
-    @apply px-4 sm:px-6 lg:px-8 py-20 md:py-28;
+    @apply px-4 sm:px-6 lg:px-8 py-14 md:py-20;
   }
 
   .container-max {
@@ -90,7 +90,7 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-white bg-gradient-to-r from-primary-600 to-accent-500 hover:from-primary-500 hover:to-accent-400 transition-all duration-300 shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 hover:-translate-y-0.5;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-white bg-primary-600 bg-gradient-to-r from-primary-600 to-accent-500 hover:from-primary-500 hover:to-accent-400 transition-all duration-300 shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 hover:-translate-y-0.5;
   }
 
   .btn-secondary {
@@ -120,7 +120,7 @@
 
   /* ===== Mascotte SVG style Aken (palette EyesTechnology) ===== */
   .logo-mascot-svg {
-    width: clamp(240px, 30vw, 380px);
+    width: clamp(150px, 20vw, 240px);
     height: auto;
     display: block;
     transform: perspective(600px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) scale(var(--mascot-scale, 1));

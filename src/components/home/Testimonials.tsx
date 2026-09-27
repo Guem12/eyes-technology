@@ -13,7 +13,7 @@ export default function Testimonials() {
           <span className="section-label">
             {t.testimonials.label[lang]}
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold mt-2 mb-4">{t.testimonials.title[lang]}</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mt-2 mb-4">{t.testimonials.title[lang]}</h2>
           <p className="text-gray-800 dark:text-gray-200">
             {t.testimonials.description[lang]}
           </p>
@@ -37,7 +37,7 @@ export default function Testimonials() {
                 <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 italic">"{tm.quote[lang]}"</p>
 
                 <div className="flex items-center gap-3">
-                  <div className="flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-br from-primary-600 to-accent-500 text-white font-semibold text-sm">
+                  <div className="flex items-center justify-center w-11 h-11 rounded-full bg-primary-600 bg-gradient-to-br from-primary-600 to-accent-500 text-white font-semibold text-sm">
                     {tm.avatar}
                   </div>
                   <div>

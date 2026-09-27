@@ -78,7 +78,7 @@ export default function FAQSection() {
             <HelpCircle className="w-4 h-4" />
             {lang === 'fr' ? 'Foire Aux Questions' : 'Frequently Asked Questions'}
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold mt-2 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold mt-2 mb-4">
             {lang === 'fr' ? 'Des questions ? Nous avons les ' : 'Got Questions? We Have '}
             <span className="gradient-text">{lang === 'fr' ? 'réponses' : 'Answers'}</span>
           </h2>

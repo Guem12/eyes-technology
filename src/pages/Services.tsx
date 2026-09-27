@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Check, ArrowRight, MessageCircle, Star, BookOpen, Download } from 'lucide-react';
+import { Check, ArrowRight, MessageCircle, Star } from 'lucide-react';
 import PageWrapper from '@/components/PageWrapper';
 import Seo from '@/components/Seo';
 import Reveal from '@/components/Reveal';
@@ -38,7 +38,7 @@ export default function Services() {
                     transition={{ type: 'spring', stiffness: 300 }}
                     className="glass-card p-6 h-full glow-border flex flex-col"
                   >
-                    <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-primary-600 to-accent-500 text-white mb-5">
+                    <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-primary-600 bg-gradient-to-br from-primary-600 to-accent-500 text-white mb-5">
                       <Icon className="w-7 h-7" />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">{service.title[lang]}</h3>
@@ -134,7 +134,7 @@ export default function Services() {
                   className={`glass-card p-6 h-full flex flex-col relative ${eng.badge ? 'glow-border ring-2 ring-primary-500/40' : ''}`}
                 >
                   {eng.badge && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-primary-600 to-accent-500 text-white shadow-lg whitespace-nowrap">
+                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full text-xs font-semibold bg-primary-600 bg-gradient-to-r from-primary-600 to-accent-500 text-white shadow-lg whitespace-nowrap">
                       <Star className="w-3 h-3 inline mr-1 -mt-0.5" />
                       {eng.badge[lang]}
                     </span>
@@ -207,49 +207,6 @@ export default function Services() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Guide gratuit (lead magnet) */}
-      <section className="section-padding">
-        <div className="container-max">
-          <Reveal>
-            <div className="glass-card glow-border p-8 sm:p-10 text-center relative overflow-hidden">
-              <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-success-500/15 text-success-700 dark:text-success-400 text-xs font-semibold">
-                <BookOpen className="w-3.5 h-3.5" />
-                {t.servicesPage.guideBadge[lang]}
-              </div>
-              <div className="max-w-2xl mx-auto">
-                <h2 className="text-2xl sm:text-3xl font-bold mb-4 mt-6">
-                  {t.servicesPage.guideTitle[lang]}
-                </h2>
-                <p className="text-gray-800 dark:text-gray-200 mb-6">
-                  {t.servicesPage.guideDesc[lang]}
-                </p>
-                <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8">
-                  {t.servicesPage.guidePoints[lang].map((point) => (
-                    <li key={point} className="text-sm text-gray-800 dark:text-gray-200 flex items-center gap-2">
-                      <Check className="w-4 h-4 text-success-500" />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href={`https://wa.me/22393739935?text=${encodeURIComponent(t.servicesPage.guideWaMessage[lang])}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary inline-flex items-center gap-2"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  {t.servicesPage.guideCta[lang]}
-                </a>
-                <p className="text-xs text-gray-700 dark:text-gray-400 mt-4 inline-flex items-center gap-1.5">
-                  <Download className="w-3.5 h-3.5" />
-                  PDF · {lang === 'fr' ? 'Gratuit et sans engagement' : 'Free, no strings attached'}
-                </p>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </section>
 

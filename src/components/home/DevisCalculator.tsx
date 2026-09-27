@@ -131,7 +131,7 @@ export default function DevisCalculator() {
           <span className="section-label">
             {lang === 'fr' ? 'Estimation Instantanée' : 'Instant Estimate'}
           </span>
-          <h2 className="text-3xl sm:text-5xl font-bold mt-2 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold mt-2 mb-4">
             {lang === 'fr' ? 'Calculez le budget de votre ' : 'Calculate Your Project '}
             <span className="gradient-text">{lang === 'fr' ? 'projet' : 'Budget'}</span>
           </h2>
@@ -266,7 +266,7 @@ export default function DevisCalculator() {
                     key={totalEstimate}
                     initial={{ scale: 0.95, opacity: 0.8 }}
                     animate={{ scale: 1, opacity: 1 }}
-                    className="text-3xl sm:text-4xl font-extrabold gradient-text"
+                    className="text-2xl sm:text-3xl font-extrabold gradient-text"
                   >
                     {formatPrice(totalEstimate)}
                   </motion.div>

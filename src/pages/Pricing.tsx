@@ -58,7 +58,7 @@ export default function Pricing() {
                   }`}
                 >
                   {i === 1 && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-primary-600 to-accent-500 text-white text-xs font-semibold flex items-center gap-1">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-primary-600 bg-gradient-to-r from-primary-600 to-accent-500 text-white text-xs font-semibold flex items-center gap-1">
                       <Star className="w-3 h-3 fill-white" />
                       {t.pricing.mostPopular[lang]}
                     </div>

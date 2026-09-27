@@ -17,7 +17,7 @@ export default function SkillsPreview() {
           <span className="section-label">
             {t.skills.label[lang]}
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold mt-2 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold mt-2 mb-4">
             {t.skills.title[lang]}
             <span className="gradient-text">{t.skills.titleAccent[lang]}</span>
           </h2>
@@ -44,7 +44,7 @@ export default function SkillsPreview() {
 
               {/* Réponse EyesTechnology */}
               <div className="flex items-end gap-2.5 justify-end">
-                <div className="rounded-2xl rounded-br-sm px-4 py-3 max-w-[85%] bg-gradient-to-br from-primary-600 to-accent-600 dark:from-primary-900 dark:to-accent-800 border border-primary-500/20 shadow-lg shadow-primary-500/10">
+                <div className="rounded-2xl rounded-br-sm px-4 py-3 max-w-[85%] bg-primary-600 bg-gradient-to-br from-primary-600 to-accent-600 dark:bg-primary-900 dark:from-primary-900 dark:to-accent-800 border border-primary-500/20 shadow-lg shadow-primary-500/10">
                   <p className="text-sm text-white leading-relaxed mb-2.5">
                     {conv.reply[lang]}
                   </p>
